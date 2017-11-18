@@ -2,6 +2,8 @@
 
 ジャンケンをモチーフにしたオフラインゲームです。2人プレイ用です。
 
+![img](https://github.com/tanishi109/four-fingers/blob/master/screenshot.png?raw=true)
+
 # ルール
 
 途中で手が変えられるジャンケンです。  
