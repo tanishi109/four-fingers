@@ -1,6 +1,6 @@
 # four-fingers :point_right:
 
-ジャンケンをモチーフにしたオフラインゲームです。2人プレイ用です。  
+ジャンケンをモチーフにした三本指で遊べるオフラインゲームです。2人プレイ用です。  
 https://tanishi109.github.io/four-fingers/
 
 ![img](https://github.com/tanishi109/four-fingers/blob/master/screenshot.png?raw=true)
