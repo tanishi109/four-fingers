@@ -1,0 +1,29 @@
+{
+  "name": "four-fingers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "next",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanishi109/four-fingers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanishi109/four-fingers/issues"
+  },
+  "homepage": "https://github.com/tanishi109/four-fingers#readme",
+  "dependencies": {
+    "gh-pages": "^1.1.0",
+    "lodash": "^4.17.4",
+    "next": "^4.1.4",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "styled-jsx": "^2.2.0",
+    "webpack": "^3.8.1"
+  }
+}
