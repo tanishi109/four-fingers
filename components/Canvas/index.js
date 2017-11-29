@@ -41,7 +41,7 @@ class Judge {
     };
   }
 
-  getLoser(weapons) {
+  getLoserIndice(weapons) {
     const offenceKinds = weapons.filter((w, i) => {
       return weapons.indexOf(w) === i && w !== "other";
     });
@@ -86,7 +86,7 @@ class Judge {
 
   update(ctx) {
     const weapons = this.hands.map((h) => h.getWeapon());
-    const loserIndice = this.getLoser(weapons);
+    const loserIndice = this.getLoserIndice(weapons);
     const loserHands = loserIndice.map((i) => this.hands[i]);
 
     this.penalty(weapons);
