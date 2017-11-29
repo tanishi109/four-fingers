@@ -34,6 +34,11 @@ class Stage {
 class Judge {
   constructor(hands) {
     this.hands = hands;
+    this.offenceIdMap_ = {
+      "rock": 0,
+      "scissors": 1,
+      "paper": 2,
+    };
   }
 
   getLoser(weapons) {
@@ -50,25 +55,11 @@ class Judge {
       // console.log(offenceKinds);
     }
 
-    const getLoseWeapon = (offenceKinds) => {
-      const r = offenceKinds.includes("rock");
-      const p = offenceKinds.includes("paper");
-      const s = offenceKinds.includes("scissors");
-
-      if (r && s) {
-        return "scissors";
-      }
-      if (s && p) {
-        return "paper";
-      }
-      if (p && r) {
-        return "rock";
-      }
-
-      new Error("勝敗不明");
-    }
-
-    const loseWeapon = getLoseWeapon(offenceKinds);
+    const offenceIds = offenceKinds.map((o) => {
+      return this.offenceIdMap_[o];
+    });
+    const loseFirst = (offenceIds[0] - offenceIds[1] + 3) % 3 === 1;
+    const loseWeapon = loseFirst ? offenceKinds[0] : offenceKinds[1];
 
     return weapons.map((w, i) => {
       if (w === loseWeapon) {
